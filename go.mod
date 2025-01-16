@@ -6,6 +6,15 @@ replace LearningGoLang/calculator => ./calculator
 
 replace LearningGoLang/operation => ./operation
 
-require LearningGoLang/calculator v0.0.0-00010101000000-000000000000
+replace LearningGoLang/countVowels => ./countVowels
 
-require LearningGoLang/operation v0.0.0-00010101000000-000000000000
+replace LearningGoLang/primeNumber => ./primeNumber
+
+require (
+	LearningGoLang/calculator v0.0.0-00010101000000-000000000000
+	LearningGoLang/countVowels v0.0.0-00010101000000-000000000000
+	LearningGoLang/operation v0.0.0-00010101000000-000000000000
+	LearningGoLang/primeNumber v0.0.0-00010101000000-000000000000
+)
+
+

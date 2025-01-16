@@ -2,15 +2,27 @@ package main
 
 import (
 	"LearningGoLang/calculator"
+	"LearningGoLang/countVowels"
 	"LearningGoLang/operation"
+	"LearningGoLang/primeNumber"
 	"log"
 )
 
 func main() {
-	calculator.PrintTimeTable(5)
-	err := calculator.Calculate(10, 20, operation.Sum)
-	if err != nil {
-		log.Fatal(err)
-	}
+	err := calculator.PrintTimeTable(10)
+	catchError(err)
 
+	err = calculator.Calculate(10, 20, operation.Sum)
+	catchError(err)
+
+	countVowels.CountVowels("Joao Victor")
+
+	err = primeNumber.IsPrime(40)
+	catchError(err)
+}
+
+func catchError(error error) {
+	if error != nil {
+		log.Fatal(error)
+	}
 }
