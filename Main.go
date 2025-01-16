@@ -5,6 +5,7 @@ import (
 	"LearningGoLang/countVowels"
 	"LearningGoLang/operation"
 	"LearningGoLang/primeNumber"
+	"LearningGoLang/tasks"
 	"log"
 )
 
@@ -18,6 +19,9 @@ func main() {
 	countVowels.CountVowels("Joao Victor")
 
 	err = primeNumber.IsPrime(40)
+	catchError(err)
+
+	err = tasks.TaskSetup()
 	catchError(err)
 }
 

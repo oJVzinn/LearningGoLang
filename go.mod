@@ -10,11 +10,14 @@ replace LearningGoLang/countVowels => ./countVowels
 
 replace LearningGoLang/primeNumber => ./primeNumber
 
+replace LearningGoLang/tasks => ./tasks
+
 require (
 	LearningGoLang/calculator v0.0.0-00010101000000-000000000000
 	LearningGoLang/countVowels v0.0.0-00010101000000-000000000000
 	LearningGoLang/operation v0.0.0-00010101000000-000000000000
 	LearningGoLang/primeNumber v0.0.0-00010101000000-000000000000
+	LearningGoLang/tasks v0.0.0-00010101000000-000000000000
 )
 
 
