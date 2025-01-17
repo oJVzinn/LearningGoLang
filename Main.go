@@ -1,10 +1,13 @@
 package main
 
 import (
+	"LearningGoLang/bulletin"
 	"LearningGoLang/calculator"
 	"LearningGoLang/countVowels"
+	"LearningGoLang/diceSimulator"
 	"LearningGoLang/operation"
 	"LearningGoLang/primeNumber"
+	"LearningGoLang/stringSorted"
 	"LearningGoLang/tasks"
 	"log"
 )
@@ -22,6 +25,15 @@ func main() {
 	catchError(err)
 
 	err = tasks.TaskSetup()
+	catchError(err)
+
+	err = bulletin.CalculateAverage([]int{8, 3, 10, 4})
+	catchError(err)
+
+	err = stringSorted.Sorted([]string{"pao", "chuveiro", "oi", "c", "Bleybleide", "joao victor"})
+	catchError(err)
+
+	err = diceSimulator.LaunchDiceSimulator(8)
 	catchError(err)
 }
 
